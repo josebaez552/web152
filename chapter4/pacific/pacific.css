@@ -2,23 +2,28 @@ body {
     background-color: #fff;
     color: #555;
 }
+
 header {
     background-color: #002171;
-color: #fff;
- }
+    color: #fff;
+}
+ 
 nav {
-background-color: #BBDEFB;
+background-color: #BBDEFB; /*bgc#bbdefb*/
 }
 h1 {
     margin-bottom: 0;
-    color: #1976D2;
+    
 }
 h2 {
-    color: #1976D2;
+    color: #1976D2; /* c#1976D2 */
 }
 dt {
-    color: #002171;
+    color: #002171; /* c#002171 */
+}
+address {
+    color: #1976D2; /* c#1976D2 */
 }
 .resort {
-    color:#1976D2
+    color:#1976D2 /* c#1976D2 */
 }
