@@ -6,18 +6,15 @@ html {
 }
 body {
   background-image: linear-gradient(
-    to bottom,
-    #fff,
-    #90c7e3
-  ); /* bgi:linear-gradient(to bottom, #fff, #90c7e3) */
+    to bottom, #fff, #90c7e3); /* bgi:linear-gradient(to bottom, #fff, #90c7e3) */
   background-repeat: no-repeat; /* bgr */
   border: 1px solid #003; /* bd */
   box-shadow: 3px 3px 3px #333; /* bsh */
-  color: #555;
+  color: #666; /* c#666 */
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /* ffa */
 }
 #wrapper {
-  Margin: auto; /* m0a */  
+  margin: auto; /* m0a */  
   max-width: 75Rem; /* mw75em */
   width: 80%;
 }
@@ -54,6 +51,9 @@ nav ul {
   max-width: 100%; /* mw100% */ 
   box-sizing: border-box; /* bsb */  
   flex-wrap: wrap; /* fxw */
+  list-style-type: none; /* lstn */
+  margin: 0; /* m0 */
+  padding-left: 0; /* pl0 */
 }
 
 nav li {
@@ -73,29 +73,31 @@ nav a:visited {
   color: #344873;
 }
 nav a:hover {
-  color: #a52a2a;
+  color: #a42a2a;
 }
 main {
   background-color: #fff;
   padding: 0.0625rem 1.25rem 1.25rem 1.875rem; /* pad:0.0625rem 1.25rem 1.25rem 1.875rem */
 }
 section {
-  
+  padding: 1rem; /* mb1.25rem */
 }
 h1,
 h2,
 h3,
 footer {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Georgia", "Times New Roman", serif;
 }
 h1 {
-  letter-spacing: 0.25em;
-  margin-bottom: 0; /* mgb
-  margin-top: 0; /* mgt */
+  letter-spacing: 0.25rem;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 h2 {
   color: #39c; /* c#39c */
+  text-shadow: 1px 1px 1px #ccc;
 }
+h3 { color: #003; }
 
 address {
   font-style: normal; /* fsn */
@@ -135,7 +137,7 @@ footer {
   display: flex; /* dfx */
   flex-direction: column; /* fdcol */
   gap: 1rem; /* gap1rem */
-  max-width: 100%; /* mw100% */
+  max-width: 100vw; /* mw100vw */
   box-sizing: border-box; /* bsb */
   overflow: auto; /* owau */
 }
@@ -145,7 +147,7 @@ footer {
   box-sizing: border-box;
   overflow-wrap: break-word; /* owbr */
 }
-@media (min-width: 32.5rem) {
+@media (max-width: 32.5rem) {
   body {
     background-image:none;
     border: none;
@@ -176,7 +178,7 @@ header {
   }
   nav li {
     border-bottom: none;
-    border-right: 0 1rem;
+    padding: 0 1rem;
     max-width: none;
   }
   .card-row {
